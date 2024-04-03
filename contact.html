@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./contact.css">
+    <script src="https://kit.fontawesome.com/f228ea6575.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- register section start -->
+     <section class="register" id="register">
+        <div class="max-width">
+            <h2 class="title">Register</h2>
+            <div class="register-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title-2">DOJANG LIMITED</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title-2">0712345678</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                            <div class="info">
+                                <div class="head">Whats App</div>
+                                <p class="sub-title-2">
+                                    <a href="https://api.whatsapp.com/send?phone=917892504742&text=Hi%20There!">WhatsApp
+                                        Now</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <p class="sub-title-2">
+                                    <a href="mailto:dojanglimited@gmail.com">dojanglimited@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message dojang limited</div>
+                    <form action="" onsubmit=" return sender()">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" id="name" placeholder="Students name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" id="email" placeholder="Students email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="message" id="phone" pattern="[7-9]{1}[0-9]{9}"
+                                placeholder="Phone number - 0712345678" oninput="isvalidPhNo()" required></textarea>
+                        </div>
+                        <div class="field textarea">
+                            <textarea id="details" cols="30" rows="10" placeholder="Enter student details"
+                                required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="social" id="social">
+        <div class="wrapper">
+            <div class="icon facebook">
+                <a href="https://www.facebook.com/profile.php?id=100084215932003">
+                    <div class="tooltip">
+                        Facebook
+                    </div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+            </div>
+            <div class="icon linkedin">
+                <a href="https://www.linkedin.com/in/magicsquare-academy-b643b1246/">
+                    <div class="tooltip">
+                        Tiktok
+                    </div>
+                    <span><i class="fab fa-tiktok"></i></span>
+                </a>
+            </div>
+            <div class="icon instagram">
+                <a href="https://www.instagram.com/magicsquarechessacademy/">
+                    <div class="tooltip">
+                        Instagram
+                    </div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+            </div>
+            <!-- <div class="icon github">
+               <div class="tooltip">
+                  Github
+               </div>
+               <span><i class="fab fa-github"></i></span>
+            </div> -->
+            <div class="icon youtube">
+                <a href="https://youtube.com/channel/UCvd9gtt6ftCnMDADV_1Sk5w">
+                    <div class="tooltip">
+                        YouTube
+                    </div>
+                    <span><i class="fab fa-youtube"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

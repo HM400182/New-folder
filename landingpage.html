@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Dojang Limited</title>
+      <link rel="stylesheet" href="gallery/gallery.css">
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body> 
+
+     
+      <div class="wrapper">
+            <div class="pattern"></div>
+
+            <nav>
+                  <div class="logo">Dojang Limited</div>
+                  <label for="click" class="menu-btn">
+                      <i class="fas fa-bars"></i>
+                  </label>
+                  <ul>
+                      <li><a class="active" href="#">Home</a></li>
+                      <li><a href="./Responsive-Services-Section/Responsive Services Section/index.html">About</a></li>
+                      <div class="dropdown">
+                        <button class="dropbtn">Sports
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                              <a href="./archery/archery.html">Archery</a>
+                          <a href="./taekwondo/taekwondo.html">Taekwondo</a>
+                          
+                          <a href="./FitLife Complete Fitness Website (Five Star Tutorials)/Project Files/index.html">Football</a>
+                          <a href="./chess/chess.html">Chess</a>
+                          <a href="./ballet/ballet.html">Ballet</a>
+                          <a href="./skates/skates.html">Skating</a>
+                        </div>
+                      </div>
+                      <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+
+            <div class="box-1 box"></div>
+            <div class="box-2 box"></div>
+            <div class="box-3 box"></div>
+
+            <div class="title-2">Limited</div>
+
+            <div class="runner">
+                  <img src="Runner.png" alt="">
+            </div>
+
+            <div class="title-1">Dojang </div>
+
+            <div class="content">
+                  <p>Dojang Limited offers diverse range of sports and
+                         activities catering to various interests and skill
+                          levels. From the dynamic discipline of Taekwondo,
+                           where students learn self-defense and 
+                           develop physical fitness, to the precision of archery, 
+                           the grace of ballet, the agility of skating, the teamwork 
+                           of football, and the strategy of chess, there's something 
+                           for everyone. Whether you're looking to improve your physical 
+                           prowess, enhance your concentration, or simply have fun while
+                            staying active, Dojang Limited provides expert instruction and
+                             a supportive environment for individuals to thrive in their chosen sport.
+                        </p>
+
+                  </div>
+
+            <div class="media">
+                  <ul>
+                        <li><ion-icon name="logo-facebook"></ion-icon></li>
+                        <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        <li><ion-icon name="logo-twitter"></ion-icon></li>
+                        <li><ion-icon name="logo-youtube"></ion-icon></li>
+                  </ul>
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+            TweenMax.to(".title-1", 2, {
+            x: 30,
+            opacity: 1,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.to(".title-2", 2, {
+            delay: 0.2,
+            x: -80,
+            opacity: 1,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".runner", 2, {
+            delay: 1.6,
+            x: -80,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".box-1", 4, {
+            delay: 1,
+            rotation: 200,
+            transformOrigin: "50% 50%",
+            opacity: 0,
+            x: -180,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".box-2", 4, {
+            delay: 1.2,
+            rotation: 90,
+            transformOrigin: "50% 50%",
+            opacity: 0,
+            x: -180,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".box-3", 4, {
+            delay: 1,
+            rotation: 180,
+            transformOrigin: "50% 50%",
+            opacity: 0,
+            x: -180,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".pattern", 2, {
+            delay: 0.8,
+            width: 0,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".logo", 2, {
+            delay: 1.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+            TweenMax.staggerFrom(".menu ul li,.dropdown-content", 2, {
+            delay: 1.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+            TweenMax.from(".cart", 2, {
+            delay: 1.7,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.staggerFrom("nav ul li", 2, {
+            delay: 2,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      TweenMax.staggerFrom(".dropbtn", 2, {
+            delay: 2,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+            TweenMax.from(".content p", 2, {
+            delay: 2.4,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+
+            TweenMax.from(".content button", 2, {
+            delay: 2.6,
+            y: 20,
+            opacity: 0,
+            ease: Expo.easeInOut
+            });
+
+      </script>
+</body>
+</html>
